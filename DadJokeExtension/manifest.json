@@ -1,0 +1,19 @@
+{
+    "name": "Dad Jokes",
+    "version": "1.0.0",
+    "description": "A simple app that fetches dad jokes from an API",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": {
+            "128": "image/logo.png"
+        }
+    },
+    "icons": {
+        "128": "image/logo.png"
+    },
+    "permissions": [
+        "activeTab",
+        "storage"
+    ]
+}

@@ -1,0 +1,155 @@
+h1 {
+  font-family: "Orbitron", cursive;
+  color: #00ff00; /* Bright green, common in gaming themes */
+  text-align: center;
+  text-shadow: 2px 2px #000000; /* Black shadow for depth */
+  margin: 10px 0; /* Adjust spacing as needed */
+  padding: 10px;
+  background-color: #121212; /* Dark background for contrast */
+  border: 2px solid #00ff00; /* Bright green border */
+  border-radius: 10px; /* Rounded corners */
+}
+
+body {
+  background-color: #121212; /* Dark background for a gamer vibe */
+  color: #ffffff; /* Light text for contrast */
+  font-family: "Roboto", sans-serif; /* Modern, clean font */
+}
+
+.gameList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.game {
+  display: flex; /* Updated to use flexbox */
+  align-items: center; /* Align items vertically */
+  background-color: #1e1e1e;
+  border: 2px solid #646464;
+  border-radius: 10px;
+  padding: 10px;
+  width: 400px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.game img {
+  margin-right: 20px; /* Space between the image and the details */
+  width: 100px; /* Fixed width for consistency */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.game div {
+  display: flex;
+  flex-direction: column;
+}
+
+.game:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 255, 0, 0.3); /* Green glow on hover */
+}
+
+a {
+  color: #00ff00; /* Bright green for links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  margin: 5px 0;
+}
+
+#prevButton,
+#nextButton {
+  background-color: #646464;
+  border: none;
+  border-radius: 5px;
+  color: #00ff00;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px;
+  padding: 10px 20px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#prevButton:hover,
+#nextButton:hover {
+  background-color: #00ff00; /* Bright green background on hover */
+  color: #121212; /* Dark text for contrast on hover */
+}
+
+#prevButton:disabled {
+  visibility: hidden;
+}
+
+#nextButton:disabled {
+  background-color: #424242;
+  cursor: not-allowed;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between; /* Aligns children to each end */
+  padding: 10px; /* Adjust as needed for spacing */
+}
+
+#searchInput {
+  background-color: #2a2a2a; /* Slightly lighter than the game background for visibility */
+  border: 1px solid #646464; /* Matching the game border */
+  border-radius: 5px; /* Slightly rounded corners */
+  color: #ffffff; /* Light text for contrast */
+  padding: 10px; /* Comfortable padding */
+  margin-bottom: 10px; /* Space from the next element */
+  width: calc(
+    100% - 22px
+  ); /* Full width taking padding and border into account */
+}
+
+#clearSearch {
+  position: relative;
+  right: 30px; /* Adjust based on the size of the search button */
+  top: 5px;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #ccc;
+  padding: 0 5px; /* Adjust padding as needed */
+}
+
+#clearSearch:hover {
+  color: #999;
+}
+
+#searchButton {
+  background-color: #646464; /* Button background matching the game border */
+  border: none; /* No additional border */
+  border-radius: 5px; /* Consistent rounded corners */
+  color: #00ff00; /* Bright green text to match links */
+  cursor: pointer; /* Cursor indicates clickable */
+  font-family: "Roboto", sans-serif; /* Consistent font usage */
+  font-weight: bold; /* Bold text */
+  padding: 10px 20px; /* Comfortable padding */
+  margin-bottom: 10px; /* Space from the next element */
+  margin-right: 10px; /* Aligns the button to the left */
+  transition: background-color 0.2s ease-in-out; /* Smooth transition for hover effect */
+}
+
+#searchButton:hover {
+  background-color: #00ff00; /* Bright green background on hover */
+  color: #121212; /* Dark text for contrast on hover */
+}
+
+.search-container {
+  display: flex;
+  justify-content: space-between; /* Adjust this as needed */
+  align-items: center; /* Aligns items vertically in the center */
+  width: 100%; /* Ensures the container takes full width */
+}
